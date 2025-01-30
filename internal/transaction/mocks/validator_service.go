@@ -4,7 +4,7 @@ package mocks
 
 import (
 	context "context"
-	validator_service "transaction/internal/transaction/types/validator_service"
+	validator_service "accounts-and-transactions/internal/transaction/types/validator_service"
 
 	mock "github.com/stretchr/testify/mock"
 )

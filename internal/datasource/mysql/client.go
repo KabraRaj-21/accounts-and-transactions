@@ -1,10 +1,10 @@
 package mysql
 
 import (
+	"accounts-and-transactions/internal/logger"
 	"context"
 	"database/sql"
 	"fmt"
-	"transaction/internal/logger"
 
 	"gorm.io/driver/mysql"
 

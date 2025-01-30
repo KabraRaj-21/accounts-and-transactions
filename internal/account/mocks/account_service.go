@@ -4,9 +4,9 @@ package mocks
 
 import (
 	context "context"
-	account_service "transaction/internal/account/types/account_service"
+	account_service "accounts-and-transactions/internal/account/types/account_service"
 
-	entity "transaction/internal/entity"
+	entity "accounts-and-transactions/internal/entity"
 
 	mock "github.com/stretchr/testify/mock"
 )

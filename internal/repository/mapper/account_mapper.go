@@ -1,10 +1,10 @@
 package mapper
 
 import (
+	"accounts-and-transactions/internal/entity"
+	"accounts-and-transactions/internal/repository/types/record"
 	"fmt"
 	"strconv"
-	"transaction/internal/entity"
-	"transaction/internal/repository/types/record"
 )
 
 func MapAccountRecordToEntity(req *record.Account) *entity.Account {

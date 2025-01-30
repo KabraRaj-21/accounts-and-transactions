@@ -1,12 +1,12 @@
 package repository
 
 import (
+	"accounts-and-transactions/internal/entity"
+	"accounts-and-transactions/internal/errors/tserror"
+	"accounts-and-transactions/internal/repository/mapper"
+	"accounts-and-transactions/internal/repository/types/db"
+	"accounts-and-transactions/internal/repository/types/record"
 	"context"
-	"transaction/internal/entity"
-	"transaction/internal/errors/tserror"
-	"transaction/internal/repository/mapper"
-	"transaction/internal/repository/types/db"
-	"transaction/internal/repository/types/record"
 
 	"gorm.io/gorm"
 )

@@ -1,9 +1,9 @@
 package validator
 
 import (
+	"accounts-and-transactions/internal/errors/tserror"
+	"accounts-and-transactions/internal/transaction/types/validator_service"
 	"context"
-	"transaction/internal/errors/tserror"
-	"transaction/internal/transaction/types/validator_service"
 
 	"github.com/shopspring/decimal"
 )

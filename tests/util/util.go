@@ -1,12 +1,12 @@
 package util
 
 import (
+	"accounts-and-transactions/internal/server/http/types"
 	"encoding/json"
 	"fmt"
 	"io"
 	"net/http"
 	"strings"
-	"transaction/internal/server/http/types"
 )
 
 func MakeHTTPApiCall(method, url, requestBody string) *http.Response {

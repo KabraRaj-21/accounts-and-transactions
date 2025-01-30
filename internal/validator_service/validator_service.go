@@ -1,9 +1,9 @@
 package validator_service
 
 import (
+	vs "accounts-and-transactions/internal/transaction/types/validator_service"
+	"accounts-and-transactions/internal/validator_service/types/validator"
 	"context"
-	vs "transaction/internal/transaction/types/validator_service"
-	"transaction/internal/validator_service/types/validator"
 )
 
 type Service struct {

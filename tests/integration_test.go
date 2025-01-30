@@ -3,12 +3,12 @@
 package tests
 
 import (
+	"accounts-and-transactions/internal/app"
+	"accounts-and-transactions/internal/config"
+	"accounts-and-transactions/tests/setup"
+	"accounts-and-transactions/tests/test_cases"
 	"context"
 	"testing"
-	"transaction/internal/app"
-	"transaction/internal/config"
-	"transaction/tests/setup"
-	"transaction/tests/test_cases"
 
 	"github.com/Swiggy/grill"
 )

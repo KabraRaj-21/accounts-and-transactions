@@ -1,10 +1,10 @@
 package account
 
 import (
+	"accounts-and-transactions/internal/account/types/account_repository"
+	"accounts-and-transactions/internal/account/types/account_service"
+	"accounts-and-transactions/internal/entity"
 	"context"
-	"transaction/internal/account/types/account_repository"
-	"transaction/internal/account/types/account_service"
-	"transaction/internal/entity"
 
 	"github.com/shopspring/decimal"
 )

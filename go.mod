@@ -1,4 +1,4 @@
-module transaction
+module accounts-and-transactions
 
 go 1.23.5
 

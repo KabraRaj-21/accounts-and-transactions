@@ -1,9 +1,9 @@
 package handler
 
 import (
-	"transaction/internal/logger"
-	"transaction/internal/server/http/utils"
-	"transaction/internal/transaction/types/transaction_service"
+	"accounts-and-transactions/internal/logger"
+	"accounts-and-transactions/internal/server/http/utils"
+	"accounts-and-transactions/internal/transaction/types/transaction_service"
 
 	"github.com/gin-gonic/gin"
 )

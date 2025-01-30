@@ -3,12 +3,12 @@
 package account
 
 import (
+	"accounts-and-transactions/internal/account/mocks"
+	"accounts-and-transactions/internal/account/types/account_service"
+	"accounts-and-transactions/internal/entity"
 	"context"
 	"errors"
 	"testing"
-	"transaction/internal/account/mocks"
-	"transaction/internal/account/types/account_service"
-	"transaction/internal/entity"
 
 	"github.com/shopspring/decimal"
 	"github.com/stretchr/testify/assert"

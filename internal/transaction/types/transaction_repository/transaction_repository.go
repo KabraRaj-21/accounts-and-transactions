@@ -1,8 +1,8 @@
 package transaction_repository
 
 import (
+	"accounts-and-transactions/internal/entity"
 	"context"
-	"transaction/internal/entity"
 )
 
 type TransactionRepository interface {

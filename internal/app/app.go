@@ -1,18 +1,18 @@
 package app
 
 import (
+	"accounts-and-transactions/internal/account"
+	"accounts-and-transactions/internal/config"
+	"accounts-and-transactions/internal/logger"
+	"accounts-and-transactions/internal/repository"
+	"accounts-and-transactions/internal/server/http"
+	"accounts-and-transactions/internal/server/http/handler"
+	"accounts-and-transactions/internal/transaction"
+	validator_types "accounts-and-transactions/internal/transaction/types/validator_service"
+	"accounts-and-transactions/internal/validator_service"
+	"accounts-and-transactions/internal/validator_service/validator"
 	"context"
 	"sync"
-	"transaction/internal/account"
-	"transaction/internal/config"
-	"transaction/internal/logger"
-	"transaction/internal/repository"
-	"transaction/internal/server/http"
-	"transaction/internal/server/http/handler"
-	"transaction/internal/transaction"
-	validator_types "transaction/internal/transaction/types/validator_service"
-	"transaction/internal/validator_service"
-	"transaction/internal/validator_service/validator"
 )
 
 type App struct {

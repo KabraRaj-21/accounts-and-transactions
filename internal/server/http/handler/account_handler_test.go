@@ -3,16 +3,16 @@
 package handler
 
 import (
+	"accounts-and-transactions/internal/account/mocks"
+	"accounts-and-transactions/internal/account/types/account_service"
+	"accounts-and-transactions/internal/entity"
+	"accounts-and-transactions/internal/errors/tserror"
+	"accounts-and-transactions/internal/server/http/types"
 	"bytes"
 	"encoding/json"
 	"net/http"
 	"net/http/httptest"
 	"testing"
-	"transaction/internal/account/mocks"
-	"transaction/internal/account/types/account_service"
-	"transaction/internal/entity"
-	"transaction/internal/errors/tserror"
-	"transaction/internal/server/http/types"
 
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/assert"

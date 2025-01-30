@@ -1,9 +1,9 @@
 package utils
 
 import (
+	"accounts-and-transactions/internal/errors/tserror"
+	"accounts-and-transactions/internal/server/http/types"
 	"net/http"
-	"transaction/internal/errors/tserror"
-	"transaction/internal/server/http/types"
 
 	"github.com/gin-gonic/gin"
 )

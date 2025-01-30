@@ -1,1 +1,5 @@
 .vscode/settings.json
+coverage-functional.html
+coverage-functional.out
+coverage-unit.html
+coverage-unit.out

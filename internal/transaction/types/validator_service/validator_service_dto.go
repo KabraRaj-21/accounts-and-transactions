@@ -1,6 +1,6 @@
 package validator_service
 
-import "transaction/internal/entity"
+import "accounts-and-transactions/internal/entity"
 
 type ActionType uint
 

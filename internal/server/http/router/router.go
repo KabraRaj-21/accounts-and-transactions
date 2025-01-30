@@ -1,9 +1,9 @@
 package router
 
 import (
+	"accounts-and-transactions/internal/server/http/handler"
+	"accounts-and-transactions/internal/server/http/middleware"
 	"context"
-	"transaction/internal/server/http/handler"
-	"transaction/internal/server/http/middleware"
 
 	"github.com/gin-gonic/gin"
 )

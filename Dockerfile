@@ -7,8 +7,8 @@ ENV GO111MODULE=on
 ARG TARGETOS
 ARG TARGETARCH
 
-ADD . /src/transaction
-WORKDIR /src/transaction
+ADD . /src/accounts-and-transactions
+WORKDIR /src/accounts-and-transactions
 
 COPY go.mod .
 COPY go.sum .
@@ -19,9 +19,9 @@ RUN go mod tidy
 COPY . .
 
 # Build the binary
-RUN CGO_ENABLED=1 GOOS=${TARGETOS} GOARCH=${TARGETARCH} go build -tags=musl,dynamic -o transaction ./cmd/main.go
+RUN CGO_ENABLED=1 GOOS=${TARGETOS} GOARCH=${TARGETARCH} go build -tags=musl,dynamic -o accounts-and-transactions ./cmd/main.go
 
-RUN chmod +x transaction
+RUN chmod +x accounts-and-transactions
 
 EXPOSE 8080
-CMD ["./transaction"]
+CMD ["./accounts-and-transactions"]

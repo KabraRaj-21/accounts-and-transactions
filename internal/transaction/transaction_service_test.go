@@ -3,14 +3,14 @@
 package transaction
 
 import (
+	"accounts-and-transactions/internal/account/types/account_service"
+	"accounts-and-transactions/internal/entity"
+	"accounts-and-transactions/internal/transaction/mocks"
+	"accounts-and-transactions/internal/transaction/types/transaction_service"
+	"accounts-and-transactions/internal/transaction/types/validator_service"
 	"context"
 	"errors"
 	"testing"
-	"transaction/internal/account/types/account_service"
-	"transaction/internal/entity"
-	"transaction/internal/transaction/mocks"
-	"transaction/internal/transaction/types/transaction_service"
-	"transaction/internal/transaction/types/validator_service"
 
 	"github.com/shopspring/decimal"
 	"github.com/stretchr/testify/assert"

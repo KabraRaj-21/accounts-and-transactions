@@ -3,11 +3,11 @@
 package test_cases
 
 import (
+	"accounts-and-transactions/internal/entity"
+	"accounts-and-transactions/tests/setup"
+	"accounts-and-transactions/tests/util"
 	"fmt"
 	"net/http"
-	"transaction/internal/entity"
-	"transaction/tests/setup"
-	"transaction/tests/util"
 
 	"github.com/Swiggy/grill"
 	"github.com/shopspring/decimal"

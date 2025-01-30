@@ -1,9 +1,9 @@
 package cmd
 
 import (
+	"accounts-and-transactions/internal/app"
+	"accounts-and-transactions/internal/config"
 	"context"
-	"transaction/internal/app"
-	"transaction/internal/config"
 )
 
 func main() {

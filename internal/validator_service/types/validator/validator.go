@@ -1,8 +1,8 @@
 package validator
 
 import (
+	"accounts-and-transactions/internal/transaction/types/validator_service"
 	"context"
-	"transaction/internal/transaction/types/validator_service"
 )
 
 type Validator interface {

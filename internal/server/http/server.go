@@ -1,15 +1,15 @@
 package http
 
 import (
+	"accounts-and-transactions/internal/config"
+	"accounts-and-transactions/internal/logger"
+	"accounts-and-transactions/internal/server/http/handler"
+	"accounts-and-transactions/internal/server/http/router"
 	"context"
 	"errors"
 	"net/http"
 	"sync"
 	"time"
-	"transaction/internal/config"
-	"transaction/internal/logger"
-	"transaction/internal/server/http/handler"
-	"transaction/internal/server/http/router"
 )
 
 var (

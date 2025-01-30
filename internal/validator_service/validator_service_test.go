@@ -3,11 +3,11 @@
 package validator_service
 
 import (
+	"accounts-and-transactions/internal/transaction/types/validator_service"
+	"accounts-and-transactions/internal/validator_service/mocks"
 	"context"
 	"errors"
 	"testing"
-	"transaction/internal/transaction/types/validator_service"
-	"transaction/internal/validator_service/mocks"
 
 	"github.com/stretchr/testify/assert"
 )

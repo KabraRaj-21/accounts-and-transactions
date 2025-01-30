@@ -1,8 +1,8 @@
 package account_repository
 
 import (
+	"accounts-and-transactions/internal/entity"
 	"context"
-	"transaction/internal/entity"
 )
 
 type AccountRepository interface {

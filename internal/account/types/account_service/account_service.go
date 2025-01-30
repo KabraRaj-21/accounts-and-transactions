@@ -1,8 +1,8 @@
 package account_service
 
 import (
+	"accounts-and-transactions/internal/entity"
 	"context"
-	"transaction/internal/entity"
 )
 
 type AccountService interface {

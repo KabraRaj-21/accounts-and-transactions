@@ -3,10 +3,10 @@
 package validator
 
 import (
+	"accounts-and-transactions/internal/entity"
+	"accounts-and-transactions/internal/transaction/types/validator_service"
 	"context"
 	"testing"
-	"transaction/internal/entity"
-	"transaction/internal/transaction/types/validator_service"
 
 	"github.com/shopspring/decimal"
 	"github.com/stretchr/testify/assert"

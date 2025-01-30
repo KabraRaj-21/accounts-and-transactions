@@ -1,9 +1,9 @@
 package account_info_service
 
 import (
+	"accounts-and-transactions/internal/account/types/account_service"
+	"accounts-and-transactions/internal/entity"
 	"context"
-	"transaction/internal/account/types/account_service"
-	"transaction/internal/entity"
 )
 
 type AccountInfoService interface {

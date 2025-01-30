@@ -1,7 +1,7 @@
 package utils
 
 import (
-	"transaction/internal/errors/tserror"
+	"accounts-and-transactions/internal/errors/tserror"
 
 	"github.com/gin-gonic/gin"
 )

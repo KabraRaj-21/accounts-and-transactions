@@ -1,9 +1,9 @@
 package config
 
 import (
+	"accounts-and-transactions/internal/logger"
 	"context"
 	"sync"
-	"transaction/internal/logger"
 
 	"github.com/Netflix/go-env"
 )

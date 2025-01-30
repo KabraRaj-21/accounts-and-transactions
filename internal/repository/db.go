@@ -1,10 +1,10 @@
 package repository
 
 import (
+	"accounts-and-transactions/internal/config"
+	"accounts-and-transactions/internal/datasource/mysql"
+	"accounts-and-transactions/internal/repository/types/record"
 	"context"
-	"transaction/internal/config"
-	"transaction/internal/datasource/mysql"
-	"transaction/internal/repository/types/record"
 
 	"gorm.io/gorm"
 )

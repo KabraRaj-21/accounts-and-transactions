@@ -1,15 +1,15 @@
 package transaction
 
 import (
+	"accounts-and-transactions/internal/account/types/account_service"
+	"accounts-and-transactions/internal/entity"
+	"accounts-and-transactions/internal/errors/tserror"
+	account_info "accounts-and-transactions/internal/transaction/types/account_info_service"
+	repo "accounts-and-transactions/internal/transaction/types/transaction_repository"
+	"accounts-and-transactions/internal/transaction/types/transaction_service"
+	"accounts-and-transactions/internal/transaction/types/validator_service"
 	"context"
 	"time"
-	"transaction/internal/account/types/account_service"
-	"transaction/internal/entity"
-	"transaction/internal/errors/tserror"
-	account_info "transaction/internal/transaction/types/account_info_service"
-	repo "transaction/internal/transaction/types/transaction_repository"
-	"transaction/internal/transaction/types/transaction_service"
-	"transaction/internal/transaction/types/validator_service"
 
 	"github.com/shopspring/decimal"
 )

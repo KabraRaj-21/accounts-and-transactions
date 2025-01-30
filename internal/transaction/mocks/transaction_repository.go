@@ -4,7 +4,7 @@ package mocks
 
 import (
 	context "context"
-	entity "transaction/internal/entity"
+	entity "accounts-and-transactions/internal/entity"
 
 	mock "github.com/stretchr/testify/mock"
 )

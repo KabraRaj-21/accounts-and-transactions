@@ -1,11 +1,11 @@
 package middleware
 
 import (
+	"accounts-and-transactions/internal/logger"
 	"bytes"
 	"io"
 	"net/http"
 	"time"
-	"transaction/internal/logger"
 
 	"github.com/gin-gonic/gin"
 )

@@ -3,13 +3,13 @@
 package handler
 
 import (
+	"accounts-and-transactions/internal/entity"
+	"accounts-and-transactions/internal/errors/tserror"
+	"accounts-and-transactions/internal/transaction/mocks"
+	"accounts-and-transactions/internal/transaction/types/transaction_service"
 	"net/http"
 	"net/http/httptest"
 	"testing"
-	"transaction/internal/entity"
-	"transaction/internal/errors/tserror"
-	"transaction/internal/transaction/mocks"
-	"transaction/internal/transaction/types/transaction_service"
 
 	"github.com/gin-gonic/gin"
 	"github.com/shopspring/decimal"

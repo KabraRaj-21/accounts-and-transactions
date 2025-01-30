@@ -3,12 +3,12 @@
 package repository
 
 import (
+	"accounts-and-transactions/internal/entity"
+	"accounts-and-transactions/internal/repository/mocks"
+	"accounts-and-transactions/internal/repository/types/record"
 	"context"
 	"errors"
 	"testing"
-	"transaction/internal/entity"
-	"transaction/internal/repository/mocks"
-	"transaction/internal/repository/types/record"
 
 	"github.com/shopspring/decimal"
 	"github.com/stretchr/testify/assert"
