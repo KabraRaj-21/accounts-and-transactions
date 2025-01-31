@@ -12,21 +12,19 @@ services:
       MYSQL_PASSWORD: mypassword
     ports:
       - "3306:3306"
+    expose:
+      - 3306
     volumes:
       - mysql-data:/var/lib/mysql
-      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
 
   app:
     build: .
-    container_name: transaction-service
+    container_name: accounts-and-transactions
     depends_on:
       - mysql
     environment:
-      DB_HOST: mysql
-      DB_PORT: 3306
-      DB_USER: myuser
-      DB_PASSWORD: mypassword
-      DB_NAME: mydb
+      - DB_HOST=my-mysql
+      - AUTO_MIGRATE_REQUIRED=true
     ports:
       - "8080:8080"
     restart: always

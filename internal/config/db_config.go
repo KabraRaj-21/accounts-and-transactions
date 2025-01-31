@@ -9,12 +9,12 @@ import (
 )
 
 type DBConfig struct {
-	Host                string `env:"DB_HOST"`
-	Port                string `env:"DB_PORT"`
-	UserName            string `env:"DB_USER_NAME"`
-	Password            string `env:"DB_PASSWORD"`
-	DatabaseName        string `env:"DB_NAME"`
-	AutoMigrateRequired bool   `env:"AUTO_MIGRATE_REQUIRED,default:false"`
+	Host                string `env:"DB_HOST,default=localhost"`
+	Port                string `env:"DB_PORT,default=3306"`
+	UserName            string `env:"DB_USER_NAME,default=myuser"`
+	Password            string `env:"DB_PASSWORD,default=mypassword"`
+	DatabaseName        string `env:"DB_NAME,default=mydb"`
+	AutoMigrateRequired bool   `env:"AUTO_MIGRATE_REQUIRED,default=false"`
 }
 
 var (
