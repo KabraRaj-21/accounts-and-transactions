@@ -44,7 +44,7 @@ make build-and-run
 ```
 |-internal
     |-entities - domain entities (account and transaction)
-    |-account - account service and use case
+    |-account - account service and use cases
     |-transaction - transaction service and use cases
     |-repository - data access layer
     |-server/http - http handlers, routes & middlewares
@@ -57,3 +57,6 @@ make build-and-run
 Each pacakge has similar structure:
 * types: contains all interfaces and other types used/exposed by the package
 * mocks: contains mocks for types defined in the package
+
+### Assumptions taken for the project ###
+* Account balance check is required for each debit transaction. A minimum balance has to be maintained.
