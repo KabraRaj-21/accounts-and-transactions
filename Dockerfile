@@ -1,25 +1,27 @@
 # Use an official Golang image as a build stage
 FROM golang:1.23 AS build-env
 
-ENV GO111MODULE=on
-
 # Automatically use the environment's OS and Architecture
 ARG TARGETOS
 ARG TARGETARCH
 
-ADD . /src/accounts-and-transactions
-WORKDIR /src/accounts-and-transactions
+ENV GO111MODULE=on
+ENV TZ=Asia/Kolkata
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
+COPY . /accounts-and-transactions
+WORKDIR /accounts-and-transactions
 
 COPY go.mod .
 COPY go.sum .
 
-RUN go mod tidy
+RUN go mod download
 
 # Copy the entire project
 COPY . .
 
 # Build the binary
-RUN CGO_ENABLED=1 GOOS=${TARGETOS} GOARCH=${TARGETARCH} go build -tags=musl,dynamic -o accounts-and-transactions ./cmd/main.go
+RUN CGO_ENABLED=0 GOOS=${TARGETOS} GOARCH=${TARGETARCH} go build -o accounts-and-transactions ./cmd/main.go
 
 RUN chmod +x accounts-and-transactions
 

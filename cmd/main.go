@@ -1,4 +1,4 @@
-package cmd
+package main
 
 import (
 	"accounts-and-transactions/internal/app"

@@ -13,8 +13,8 @@ test-functional:
 	@echo "Functional test coverage report: coverage-functional.html"
 
 # Build and start the service using Docker Compose
-build-and-run:
+start-service:
 	docker-compose up --build
 
-stop:
+stop-service:
 	docker-compose down
