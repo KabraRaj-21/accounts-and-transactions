@@ -24,8 +24,18 @@ make test-functional
 ```
 
 ### Local Docker Setup ###
+
+Prerequisites on local machine:
+* Golang (>=v1.23.5)
+* Docker
+
+Setting up docker containers and starting the service:
 ```
-make build-and-run
+make start-service
+```
+Stopping service:
+```
+make stop-service
 ```
 
 ### Features ###
