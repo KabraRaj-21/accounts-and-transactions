@@ -14,16 +14,25 @@ import (
 
 func TestAccountBalanceValidator_Validate(t *testing.T) {
 	testCases := map[string]struct {
+		operationType     entity.OperationType
 		accountBalance    decimal.Decimal
 		transactionAmount decimal.Decimal
 		isErrorExpected   bool
 	}{
+		"Non Debit transaction": {
+			operationType:     entity.OperationType_CREDIT_VOUCHER,
+			accountBalance:    decimal.NewFromFloat(1000),
+			transactionAmount: decimal.NewFromFloat(1000.04),
+			isErrorExpected:   false,
+		},
 		"Account does not have enough balance": {
+			operationType:     entity.OperationType_NORMAL_PURCHASE,
 			accountBalance:    decimal.NewFromFloat(1000),
 			transactionAmount: decimal.NewFromFloat(1000.04),
 			isErrorExpected:   true,
 		},
 		"Account has enough balance": {
+			operationType:     entity.OperationType_PURCHASE_WITH_INSTALLMENTS,
 			accountBalance:    decimal.NewFromFloat(1000),
 			transactionAmount: decimal.NewFromFloat(500.04),
 			isErrorExpected:   false,
@@ -35,7 +44,8 @@ func TestAccountBalanceValidator_Validate(t *testing.T) {
 			accountBalanceValidator := NewAccountBalanceValidator()
 			req := &validator_service.ValidationRequest{
 				Transaction: &entity.Transaction{
-					Amount: tc.transactionAmount,
+					Amount:        tc.transactionAmount,
+					OperationType: tc.operationType,
 				},
 				Account: &entity.Account{
 					Balance: tc.accountBalance,
